@@ -38,6 +38,18 @@ body {
     padding: 0 20px;
 }
 
+::-moz-selection {
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+    text-shadow: none;
+}
+
+::selection {
+    background-color: var(--clr-primary);
+    color: var(--clr-text);
+    text-shadow: none;
+}
+
 .logo {
     padding: 20px;
     z-index: 3;
@@ -335,4 +347,11 @@ main {
 .review-byline::before {
     content: "– ";
     color: var(--clr-text);
+}
+
+.global-footer {
+    color: var(--clr-text-muted);
+    font-size: 18px;
+    text-align: right;
+    padding: 15px 10px;
 }
