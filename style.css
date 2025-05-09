@@ -1,0 +1,237 @@
+:root {
+    --clr-primary: #A855F7;
+    --clr-accent: #5FF758;
+  
+    --clr-bg: #F9F9FB;
+    --clr-surface: rgba(255, 255, 255, 0.2);
+    --clr-border: #E3E3E3;
+  
+    --clr-text: #1C1C1E;
+    --clr-text-muted: #666;
+  }
+  
+  body.dark {
+    --clr-primary: #C084FC;
+    --clr-accent: #4BE647;
+  
+    --clr-bg: #1E1B2E;
+    --clr-surface: rgba(30, 27, 46, 0.2);
+    --clr-border: #3C3755;
+  
+    --clr-text: #F9F9F9;
+    --clr-text-muted: #B3B3B3;
+  }
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+    background-color: var(--clr-bg);
+    font-family: "Roboto Slab", serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 20px;
+}
+
+.logo {
+    padding: 20px;
+    z-index: 3;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-family: "Jost", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--clr-accent);
+    font-size: 24px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+p {
+    margin: 0 0 24px;
+}
+
+.logo a {
+    margin: 0%;
+    position: relative;
+    top: -7px;
+    display: block;
+    width: 960px;
+    height: 20vh;
+    background-image: url(img/logo.png);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: var(--clr-text);
+    text-indent: -9999px;
+    z-index: 4;
+}
+
+.cover {
+    position: relative;
+    margin-top: -190px;
+    background: url(img/aboutm1.webp);
+    background-repeat: no-repeat;
+    width: 960px;
+    height: 40vh;
+    z-index: 0;
+}
+
+main {
+   margin-top: 50px; 
+}
+
+.badge {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+    padding: auto;
+    background-color: var(--clr-accent);
+    opacity: 0.8;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    color: var(--clr-text);
+    font-size: 54px;
+    line-height: 40px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: -2;
+}
+
+.badge small {
+    font-size: 16px;
+    line-height: 16px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 0cap;
+    display: block;
+    font-family: "Roboto Slab", serif;
+    padding-top: 28px;
+}
+
+
+.post-header {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.post-header a {
+    color: var(--clr-primary);
+}
+
+.post-title {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--clr-text);
+    font-size: 30px;
+    margin:  0 0 5px;
+}
+
+.post-meta {
+    color: var(--clr-text);
+    font-style: italic;
+}
+
+.post-meta time:before {
+    content: " . ";
+    font-style: normal;
+}
+
+.author {
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 3px;
+}
+
+.post-content p {
+    color: var(--clr-text);
+    line-height: 1.4;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+.post-content p:first-child {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.pullquote {
+    color: var(--clr-text-muted);
+    max-width: 200px;
+    text-align: justify;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+    margin: 34px 0px 24px 34px;
+}
+
+.pullquote.float-left {
+    margin: 24px 34px 24px 0;
+}
+
+.pullquote q {
+    font-size: 22px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+.pullquote i {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.pullquote ul,
+.pullquote ol {
+    list-style: none;
+    padding-left: 0%;  
+}
+
+.pullquote li {
+    border-bottom: 1px dotted var(--clr-primary);
+    padding-top: 10px;
+}
+
+.pullquote li:last-child {
+    border: none;
+}
+
+.pullquote li a {
+    color: var(--clr-text-muted);
+    text-decoration: none;
+    transition: all 0.6s linear;
+}
+
+.pullquote li a:hover {
+    color: var(--clr-text);
+    text-decoration: none;
+    transform: scale(1.1);
+}
