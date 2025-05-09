@@ -93,6 +93,7 @@ p {
     color: var(--clr-text);
     text-indent: -9999px;
     z-index: 4;
+    transition: all 0.6s linear;
 }
 
 .cover {
@@ -129,6 +130,11 @@ main {
     text-decoration: none;
     text-align: center;
     letter-spacing: -2;
+    transition: all 0.8s linear;
+}
+
+.badge:hover {
+    filter: brightness(1.2);
 }
 
 .badge small {
@@ -149,7 +155,14 @@ main {
 }
 
 .post-header a {
+    display: inline-block;
     color: var(--clr-primary);
+    transition: all 0.6s linear;
+}
+
+.post-header a:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
 }
 
 .post-title {
@@ -273,7 +286,14 @@ main {
 } */
 
 .post-footer a {
+    display: inline-block;
     color: var(--clr-primary);
+    transition: all 0.6s linear;
+}
+
+.post-footer a:hover {
+    transform: scale(1.02);
+    filter: brightness(1.2);
 }
 
 .byline {
@@ -293,6 +313,14 @@ main {
 .photo img {
     border-radius: 50%;
     border: 5px solid var(--clr-accent);
+    transition: all 0.6s linear;
+    filter: saturate(0.8);
+}
+
+.photo img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 2px var(--clr-primary);
+    filter: brightness(1.05);
 }
 
 .bio p {
