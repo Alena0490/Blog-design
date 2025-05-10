@@ -60,7 +60,8 @@ body {
 }
 
 header {
-    width: 960px;
+    position: relative;
+    max-width: 960px;
     margin: 0% auto;
 }
 
@@ -74,7 +75,7 @@ header {
     background-color: var(--clr-bg-transparent);
     position: relative;
     top: 0;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     font-family: "Roboto Slab", serif;
     -webkit-font-smoothing: antialiased;
@@ -109,7 +110,7 @@ p {
     position: relative;
     top: -8px;
     display: block;
-    width: 960px;
+    max-width: 960px;
     height: 20vh;
     background-image: url(img/logo.png);
     /* background-size: contain; */
@@ -132,7 +133,7 @@ p {
     overflow: hidden;
     background-size: contain;
     /* border-bottom: solid 3.5px var(--clr-bg); */
-    width: 960px;
+    max-width: 960px;
     height: 91vh;
     z-index: 0;
 }
@@ -173,7 +174,8 @@ p {
     z-index: 6;
   }
 
-  .arrow {
+   a .arrow {
+    width: 4rem;
     margin: -10px;
     max-width: 80px;
     max-height: 80px;
@@ -199,14 +201,16 @@ main {
 
 .badge {
     position: absolute;
-    right: 16%;
-    top: 75vh;
+    right: 5rem;
+    bottom: 5rem;
     padding: auto;
     background-color: var(--clr-accent);
     opacity: 0.8;
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 20%;
+    height: 20%;
+    max-width: 120px;
+    max-height: 120px;
     border-radius: 50%;
     color: var(--clr-text);
     font-size: 54px;
@@ -239,6 +243,7 @@ main {
 
 
 .post-header {
+    position: relative;
     text-align: left;
     margin-left: 16px;
 }
@@ -397,6 +402,11 @@ main {
 
 .about {
     max-width: 368px;
+    margin: 0 auto;
+}
+
+.photo {
+    margin: 0 auto;
 }
 
 .photo img {
@@ -438,18 +448,17 @@ main {
     align-items: flex-start;
     list-style: none;
     padding-left: 0%;
-    overflow: hidden;   
+    /* overflow: hidden;    */
 }
 
 .reviews li {
-    min-width: 28%;
+    min-width: 250px;
     position: relative;
-    font-size: 14px;
     line-height: 24px;
-    float: left;
-    width: 220px;
-    margin-left: 16px;
-    margin-right: 16px;
+    /* float: left; */
+    flex: 1 1 250px;
+    max-width: 100%;
+    margin: 16px;
     padding-left: 32px;
     padding-top: 8px;
     text-align: center;

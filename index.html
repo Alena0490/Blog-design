@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="img/android-chrome-192x192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="img/android-chrome-512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="img/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
  
     </head>
 <body class="dark">
@@ -25,7 +33,7 @@
 
 
             <div class="arrow-down">
-                <a href="#" class="move-down"></a><svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1519 1519">
+                <a href="#" class="move-down scroll-start"><svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1519 1519">
                     <path
                     fill="currentColor" 
                     transform="scale(2.9668 2.9668)" d="M255.958 228.744C263.534 219.362 273.06 211.328 281.541 202.761L416.791 68.0706C420.355 64.5303 423.766 60.981 427.832 58.0034C428.042 58.3067 427.832 112.337 427.832 118.771C418.329 127.639 409.668 136.291 400.455 145.489L300.953 243.86C295.61 249.227 289.689 254.056 284.566 259.632C274.215 270.897 265.058 282.745 255.958 294.987C254.259 292.63 252.86 290.063 251.132 287.72C233.596 263.941 211.103 244.398 190.15 223.729L107.837 142.432C101.061 135.702 94.0059 129.178 87.3586 122.331C86.3125 121.196 85.296 120.133 84.5464 118.771C84.19 112.239 84.5384 105.483 84.5401 98.9302L84.5464 58.0034C96.2979 66.9814 111.045 83.4459 121.794 94.076L237.957 209.974C243.729 215.664 251.434 222.143 255.958 228.744Z"/>
@@ -33,14 +41,15 @@
     fill="currentColor"
     transform="scale(2.9668 2.9668)" d="M255.958 381.317C260.309 374.623 266.8 369.159 272.412 363.533L389.408 247.148C402.193 234.472 414.717 221.541 427.832 209.201C428.124 211.052 427.886 213.261 427.871 215.149L427.832 271.652C414.582 285.445 400.483 298.442 386.904 311.908L279.365 418.761C272.558 425.579 258.834 436.675 255.958 445.902C252.757 438.577 248.221 434.099 242.708 428.569L97.0319 283.169C93.4561 279.61 89.9909 275.971 85.919 272.965L84.5464 271.652C85.1612 252.908 85.42 228.824 84.5464 210.114C90.0234 213.651 94.4988 218.998 99.0654 223.618L218.805 342.971C230.546 354.523 245.577 368.738 255.958 381.317Z"/>
 
-                </svg></a>
+                </svg>
+            </a>
             </div>
 
 
 
         </div>
         <a href="#" class="badge">
-            <small>číslo</small>
+            <small>článek</small>
             404
         </a>
     </header>
@@ -49,7 +58,7 @@
         <main>
             <article>
                 <header class="post-header">
-                    <h1 class="post-title">First article</h1>
+                    <h1 class="post-title scroll-end">First article</h1>
                     <p class="post-meta">Napsal: 
                         <a href="#" class="author">admin</a>
                         <time datetime="2014-10-20">Říjen 20, 2014</time>
@@ -140,5 +149,6 @@
             &copy; Alena Pumprová, 2025
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
