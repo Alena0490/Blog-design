@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//Vrácení nahoru
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
+
+  /***Přepnutí na Light/Dark mode */
+  const toggle = document.getElementById('modeToggle');
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
