@@ -88,8 +88,22 @@ header {
     filter: none; 
 }
 
-
 .logo a {
+    width: 50%;
+    margin: 0%;
+    position: relative;
+    top: -8px;
+    display: block;
+    max-width: 960px;
+    height: 20vh;
+    background-image: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: var(--clr-text);
+    text-indent: -9999px;
+    z-index: 4;
+    transition: all 0.6s linear;
     filter: invert(0.6) brightness(0.5);
 }
 
@@ -123,30 +137,13 @@ h1 {
 h3 {
     margin-top: 64px;
     color: var(--clr-accent);
-    font-size: 24px;
+    font-size: clamp(18px, 2.5vw, 24px);
     padding-left: 32px;
     padding-right: 32px;
 }
 
 p {
     margin: 0 0 16px;
-}
-
-.logo a {
-    margin: 0%;
-    position: relative;
-    top: -8px;
-    display: block;
-    max-width: 960px;
-    height: 20vh;
-    background-image: url(img/logo.png);
-    /* background-size: contain; */
-    background-repeat: no-repeat;
-    text-decoration: none;
-    color: var(--clr-text);
-    text-indent: -9999px;
-    z-index: 4;
-    transition: all 0.6s linear;
 }
 
 .cover {
@@ -290,15 +287,16 @@ body.dark main {
     padding: auto;
     background-color: var(--clr-accent);
     opacity: 0.8;
-    display: block;
-    width: 20%;
-    height: 20%;
-    max-width: 120px;
-    max-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: clamp(80px, 20vw, 120px); /* responzivní šířka */
+    aspect-ratio: 1 / 1; /* zajišťuje čtvercový poměr */
     border-radius: 50%;
     color: var(--clr-text);
-    font-size: 54px;
-    line-height: 40px;
+    font-size: clamp(28px, 6vw, 48px);
+    line-height: clamp(22px, 3vw, 30px);
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -315,14 +313,15 @@ body.dark main {
 }
 
 .badge small {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: clamp(14px, 1.6vw, 16px);
+    line-height: 1;
     font-style: italic;
     font-weight: normal;
     letter-spacing: 0cap;
     display: block;
     font-family: "Roboto Slab", serif;
-    padding-top: 32px;
+    /* padding-top: 32px; */
+    margin-bottom: 8%;
 }
 
 
@@ -349,7 +348,7 @@ body.dark main {
     font-weight: 800;
     font-style: normal;
     color: var(--clr-text);
-    font-size: 30px;
+    font-size: clamp(24px, 2.5vw, 30px);
     margin:  0 0 8px;
 }
 
@@ -377,12 +376,12 @@ body.dark main {
     text-align: justify;
     padding-left: 32px;
     padding-right: 32px;
-    font-size: 19px;
+    font-size: clamp(18px, 2vw, 19px);
 }
 
 .post-content p:first-child {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.36;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -409,14 +408,14 @@ body.dark main {
 }
 
 .pullquote q {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.36;
     font-style: italic;
 }
 
 .pullquote i {
     font-weight: 800;
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
 }
 
 .pullquote ul,
@@ -438,7 +437,7 @@ body.dark main {
     color: var(--clr-text-muted);
     text-decoration: none;
     transition: all 0.8s ease;
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
 }
 
 .pullquote li a:hover {
@@ -454,7 +453,7 @@ body.dark main {
 }
 
 .post-footer h4 {
-    font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px);
     text-transform: uppercase;
     margin-bottom: 8px;
 }
@@ -516,8 +515,8 @@ body.dark main {
 .bio p {
     text-align: justify;
     color: var(--clr-text);
-    font-size: 22px;
-    line-height: 30px;
+    font-size: clamp(18px, 2.2vw, 22px);
+    line-height: 1.36;
     /* font-style: italic */
 }
 
@@ -539,21 +538,20 @@ body.dark main {
 .reviews li {
     min-width: 250px;
     position: relative;
-    line-height: 24px;
-    /* float: left; */
+    font-size: clamp(20px, 2.2vw, 22px);
+    line-height: 1.09;
     flex: 1 1 250px;
     max-width: 100%;
     margin: 16px;
     padding-left: 32px;
     padding-top: 8px;
     text-align: center;
-    font-size: 22px;
 }
 
 .reviews li::before {
     content: '"';
     color: var(--clr-text-muted);
-    font-size: 60px;
+    font-size: clamp(40px, 6vw, 60px);
     font-style: italic;
     position: absolute;
     top: 16px;
@@ -581,7 +579,7 @@ body.dark main {
 
 .global-footer {
     color: var(--clr-text-muted);
-    font-size: 18px;
+    font-size: clamp(16px, 1.8vw, 18px);
     text-align: right;
     padding: 32px 32px 16px 32px;
     background-color: var(--clr-bg);
