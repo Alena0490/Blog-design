@@ -1,7 +1,7 @@
 :root {
-    ---clr-overlay:#c68dff;
+    ---clr-overlay:#cc98ff;
     --clr-primary: #A855F7;
-    --clr-accent: #3fee36;
+    --clr-accent: #22e318;
   
     --clr-bg: #F9F9FB;
     --clr-bg-transparent: #f9f9fbc0;
@@ -15,7 +15,7 @@
   
   body.dark {
     ---clr-overlay: #A855F7;
-    --clr-primary: #c68dff;
+    --clr-primary: #cc98ff;
     --clr-accent: #4BE647;
   
     --clr-bg: #1E1B2E;
@@ -376,7 +376,7 @@ body.dark main {
     text-align: justify;
     padding-left: 32px;
     padding-right: 32px;
-    font-size: clamp(18px, 2vw, 19px);
+    font-size: clamp(18px, 2.5vw, 22px);
 }
 
 .post-content p:first-child {
