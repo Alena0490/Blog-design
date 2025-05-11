@@ -134,7 +134,7 @@ h1 {
     margin-top: 32px;
 }
 
-h3 {
+h2, h3 {
     margin-top: 64px;
     color: var(--clr-accent);
     font-size: clamp(18px, 2.5vw, 24px);
