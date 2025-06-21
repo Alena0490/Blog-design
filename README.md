@@ -1,5 +1,6 @@
 
  # 📰 Blog-design – retro blogový layout s moderními úpravami
+ ![Mockup blogu](blog-mockup.jpg)
 
 Tento webový projekt vznikl na základě staršího tutoriálu, který používal tehdejší běžné techniky jako **floaty** a klasické HTML rozvržení. Při jeho úpravě jsem přidala vlastní prvky a styly – výsledkem je blog s retro vzhledem kombinovaný s moderním přístupem a efekty.
 
