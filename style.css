@@ -630,3 +630,22 @@ input:checked + .slider {
 input:checked + .slider::before {
   transform: translateX(26px);
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .post-content p:first-child {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .pullquote.float-left {
+        float: none;
+        margin: 16px 32px 16px 32px;
+    }
+
+    .pullquote.float-right {
+        float: none;
+        margin: 16px 32px 16px 32px;
+    }
+}
